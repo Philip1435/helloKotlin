@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AppCompat.HelloKotlin" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.CircularPicture" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
