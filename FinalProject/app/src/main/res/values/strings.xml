@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExpensePartner</string>
+    <string name="main_tab_analytic">Analytic</string>
+    <string name="main_tab_history">History</string>
+</resources>

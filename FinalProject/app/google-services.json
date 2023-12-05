@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582551347868",
+    "project_id": "expensepartner",
+    "storage_bucket": "expensepartner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582551347868:android:cbee17740157eda976c359",
+        "android_client_info": {
+          "package_name": "com.example.expensepartner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX8ZnNl5hCcHZdntWGrkE_OAnxpo3mpLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
