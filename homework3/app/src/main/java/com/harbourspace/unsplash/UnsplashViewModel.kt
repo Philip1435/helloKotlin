@@ -29,7 +29,9 @@ class UnsplashViewModel : ViewModel(), UnsplashResult {
 
   override fun onDataFetchedSuccess(images: UnsplashItemByID) {
     Log.d(TAG, "onDataFetchedSuccess | Received images")
+    Log.d(TAG, "${tags}")
     _items.value = images
+    _tags.value = images.tags
   }
 
   override fun onDataFetchedFailed() {

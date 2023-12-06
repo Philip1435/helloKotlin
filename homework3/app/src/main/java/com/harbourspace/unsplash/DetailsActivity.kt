@@ -85,8 +85,9 @@ fun SettingsContent(unsplashViewModel: UnsplashViewModel) {
   val width = img?.width
   val download = img?.downloads
   val like = img?.likes
-//  val tags = img?.tags
-  val tags = unsplashViewModel.tags.observeAsState(emptyList())
+  var tags_size = img?.tags?.size ?:0
+  val tags = List(tags_size) {index -> img?.tags?.get(index) }
+//  val tags = unsplashViewModel.tags.observeAsState(emptyList())
 
   val painter = rememberAsyncImagePainter(
     model = ImageRequest.Builder(LocalContext.current)
@@ -309,28 +310,21 @@ fun SettingsContent(unsplashViewModel: UnsplashViewModel) {
       )
     }
 
-    item (){
+    item {
       LazyRow (
         modifier = Modifier
           .padding(16.dp)
       ){
-        items(tags.value){ tag ->
+        items(tags){ tag ->
           Button(
             onClick = { /*TODO*/ },
             colors = ButtonDefaults.buttonColors(
               containerColor = Color.DarkGray,
             )
           ){
-            Text(text = "${tag.title}")
+            Text(text = "${tag?.title}")
           }
           Spacer(modifier = Modifier.width(10.dp))
-          Button(
-            onClick = { /*TODO*/ },
-            colors = ButtonDefaults.buttonColors(
-              containerColor = Color.DarkGray)
-          ){
-            Text(text = "spain")
-          }
         }
 
       }
